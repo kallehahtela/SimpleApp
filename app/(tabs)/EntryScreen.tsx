@@ -24,7 +24,7 @@ const EntryScreen: React.FC = () => {
                     <ButtonBox header='Login' onPress={() => navigation.navigate('Login')}/>
                     <ButtonBorder header='Register' onPress={() => navigation.navigate('Register')} />
 
-                    <TouchableOpacity onPress={() => navigation.navigate('Home')}>
+                    <TouchableOpacity onPress={() => navigation.navigate('Tabs')}>
                         <Text style={styles.text}>
                             Continue as guest
                         </Text>

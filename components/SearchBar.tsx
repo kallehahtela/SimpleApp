@@ -4,23 +4,29 @@ import { AntDesign, Ionicons } from '@expo/vector-icons';
 
 const SearchBar = () => {
 return (
-    <TouchableOpacity style={styles.outerContainer}>
-        <View style={styles.innerContainer}>
-            <AntDesign name='search1' size={24} color='white' />
-            <TextInput 
-                style={styles.input}
-                placeholder='Explore here...' 
-                placeholderTextColor='white' 
-            />
-            
-        </View>
-    </TouchableOpacity>
+    <View style={styles.box}>
+        <TouchableOpacity style={styles.outerContainer}>
+            <View style={styles.innerContainer}>
+                <AntDesign name='search1' size={24} color='white' />
+                <TextInput 
+                    style={styles.input}
+                    placeholder='Explore here...' 
+                    placeholderTextColor='white' 
+                />
+            </View>
+        </TouchableOpacity>
+    </View>
     );
 };
 
 export default SearchBar
 
 const styles = StyleSheet.create({
+    box: {
+        height: 80,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
     outerContainer: {
         position: 'absolute',
         top: Platform.OS === 'ios' ? 0 : 10,

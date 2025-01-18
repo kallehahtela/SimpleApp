@@ -5,6 +5,7 @@ import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
 
 import ButtonBox from '@/ui/ButtonBox';
 import ButtonBorder from '@/ui/ButtonBorder';
+import EntryScreen from './EntryScreen';
 
 type RootStackParamList = {
     Tabs: undefined;
@@ -18,9 +19,11 @@ const AccountScreen: React.FC = () => {
 
     return (
         <SafeAreaView style={styles.safeArea}>
-            <View style={styles.outerContainer}>
-                <ButtonBox header='Login' onPress={() => navigation.navigate('Login')}/>
+            <View style={styles.outerContainer}> 
+
+            <Text style={styles.text}>You need to login</Text>
             </View>
+            <EntryScreen />
         </SafeAreaView>
     );
 };
@@ -34,7 +37,7 @@ const styles = StyleSheet.create({
         zIndex: 2,
     },
     outerContainer: {
-        height: '100%',
+        height: '90%',
         justifyContent: 'center',
         alignItems: 'center',
         padding: 16, // Optional: for padding inside scroll content

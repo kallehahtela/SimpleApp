@@ -36,7 +36,7 @@ const LoginScreen: React.FC = () => {
                         </View>
 
                         <View style={styles.buttonContainer}>
-                            <ButtonBox header='Login' />
+                            <ButtonBox header='Login' onPress={() => navigation.navigate("Tabs")}/>
                         </View>
 
                         <Text style={styles.orText}>

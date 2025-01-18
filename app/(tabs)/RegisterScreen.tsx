@@ -32,7 +32,7 @@ const RegisterScreen: React.FC = () => {
                     <InputField placeholder='Confirm your password'/>
 
                     <View style={styles.buttonContainer}>
-                        <ButtonBox header='Sign Up' />
+                        <ButtonBox header='Sign Up' onPress={() => navigation.navigate('Tabs')}/>
                     </View>
 
                     <Text style={styles.orText}>
